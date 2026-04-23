@@ -86,8 +86,11 @@
       .hero {
         padding: 18px 22px 26px;
         border-radius: 24px;
+        background-image:
+          linear-gradient(145deg, rgba(102, 210, 255, 0.34) 0%, rgba(88, 126, 255, 0.30) 52%, rgba(138, 66, 255, 0.28) 100%),
+          linear-gradient(140deg, rgba(255, 255, 255, 0.88), rgba(218, 247, 255, 0.74));
         border: 1px solid rgba(140, 235, 255, 0.72);
-        box-shadow: 0 8px 26px rgba(0, 62, 92, 0.24), 0 0 0 1px rgba(0, 195, 255, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.76);
+        box-shadow: 0 7px 22px rgba(0, 62, 92, 0.22), 0 0 0 1px rgba(0, 195, 255, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.78);
       }
 
 
@@ -96,7 +99,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 12px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(185, 244, 255, 0.44));
+        background: linear-gradient(180deg, rgba(231, 250, 255, 0.78), rgba(167, 223, 255, 0.5) 54%, rgba(171, 148, 255, 0.38) 100%);
         border-radius: 999px;
         padding: 10px 16px;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), inset 0 -5px 10px rgba(0, 130, 170, 0.16), 0 2px 10px rgba(0, 85, 124, 0.18);
@@ -151,15 +154,15 @@
         font-size: clamp(2rem, 6vw, 3.2rem);
         line-height: 1.05;
         letter-spacing: 0.85px;
-        color: #012b3d;
-        text-shadow: 0 2px 0 rgba(255, 255, 255, 0.58), 0 0 30px rgba(0, 210, 255, 0.34);
+        color: #2d568f;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.72), 0 0 14px rgba(88, 112, 255, 0.14);
       }
 
       .tagline {
         margin: 14px auto 0;
         max-width: 650px;
         font-size: clamp(1rem, 2.3vw, 1.18rem);
-        color: #0a4456;
+        color: #134a61;
       }
 
       .beats-section {
@@ -171,14 +174,19 @@
         margin: 0 0 12px;
         font-size: 1.35rem;
         letter-spacing: 0.55px;
-        color: #baf4ff;
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.38), 0 0 20px rgba(0, 200, 255, 0.48);
+        color: #ccf7ff;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.40), 0 0 16px rgba(0, 200, 255, 0.36);
       }
 
       .genre-explorer {
         border-radius: 18px;
         padding: 14px;
         margin-bottom: 14px;
+        background-image:
+          linear-gradient(160deg, rgba(89, 196, 255, 0.28), rgba(112, 97, 255, 0.24)),
+          linear-gradient(140deg, rgba(255, 255, 255, 0.90), rgba(218, 246, 255, 0.80));
+        border: 1px solid rgba(140, 235, 255, 0.72);
+        box-shadow: 0 6px 18px rgba(0, 62, 92, 0.18), 0 0 0 1px rgba(0, 195, 255, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.74);
       }
 
       .genre-explorer h3 {
@@ -186,7 +194,7 @@
         font-family: var(--font-display);
         font-size: 1rem;
         letter-spacing: 0.4px;
-        color: #03667d;
+        color: #115874;
       }
 
       .genre-accordion {
@@ -196,19 +204,21 @@
 
       .genre-item {
         border-radius: 14px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(180, 240, 255, 0.48));
-        border: 1px solid rgba(255, 255, 255, 0.54);
-        border-left: 3px solid rgba(0, 210, 255, 0.68);
+        background:
+          linear-gradient(145deg, rgba(88, 198, 255, 0.24), rgba(96, 117, 255, 0.20) 52%, rgba(127, 72, 255, 0.18) 100%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.90), rgba(196, 244, 255, 0.78));
+        border: 1px solid rgba(187, 234, 255, 0.86);
+        border-left: 3px solid rgba(107, 139, 255, 0.74);
         overflow: hidden;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.84), 0 4px 14px rgba(0, 98, 132, 0.20);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88), 0 3px 10px rgba(0, 98, 132, 0.16);
         contain: layout paint;
       }
 
       .genre-toggle {
         width: 100%;
         border: 0;
-        background: transparent;
-        color: #0a4f64;
+        background: linear-gradient(90deg, rgba(94, 202, 255, 0.26), rgba(121, 84, 255, 0.24));
+        color: #1e4676;
         padding: 10px 12px;
         font-family: var(--font-display);
         font-weight: 800;
@@ -238,12 +248,8 @@
       .genre-content {
         display: none;
         opacity: 0;
-        transform: translateY(-6px);
-        transition: opacity 0.18s ease, transform 0.18s ease;
-      }
-
-      .genre-item.open .genre-content {
-        display: block;
+        transform: translateY(-4px);
+        transition: opacity 0.24s ease, transform 0.24s ease;
       }
 
       .genre-content.is-visible {
@@ -447,7 +453,12 @@
         padding: 14px;
         text-align: center;
         font-weight: 700;
-        color: #055a72;
+        color: #1f4b78;
+        background:
+          linear-gradient(145deg, rgba(102, 210, 255, 0.42) 0%, rgba(88, 126, 255, 0.38) 52%, rgba(138, 66, 255, 0.36) 100%),
+          linear-gradient(140deg, rgba(255, 255, 255, 0.95), rgba(218, 247, 255, 0.86));
+        border: 1px solid rgba(140, 235, 255, 0.72);
+        box-shadow: 0 6px 18px rgba(0, 62, 92, 0.18), 0 0 0 1px rgba(0, 195, 255, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.78);
         letter-spacing: 0.2px;
       }
 
@@ -664,6 +675,20 @@
             <button class="glossy-btn" data-audio-id="audio-darkweb">Play</button>
           </article>
 
+          <article class="beat-card glass" data-genre="Trap">
+            <div class="beat-header">
+              <h3 class="beat-title">Nukacola</h3>
+              <span class="genre">Trap</span>
+            </div>
+            <div class="meta">
+              <span>141 BPM</span>
+              <span class="key-tag">Dm</span>
+              <span>$29.99</span>
+            </div>
+            <audio class="audio" id="audio-nukacola" src="beats/%22Nukacola%22 141 Dmin (Trap).mp3"></audio>
+            <button class="glossy-btn" data-audio-id="audio-nukacola">Play</button>
+          </article>
+
           <!-- POP -->
           <article class="beat-card glass" data-genre="Pop">
             <div class="beat-header">
@@ -691,6 +716,20 @@
             </div>
             <audio class="audio" id="audio-skypeexe" src="beats/Skype.exe 112 C%23m (Pop).wav.mp3"></audio>
             <button class="glossy-btn" data-audio-id="audio-skypeexe">Play</button>
+          </article>
+
+          <article class="beat-card glass" data-genre="Pop">
+            <div class="beat-header">
+              <h3 class="beat-title">Once Upon A Time</h3>
+              <span class="genre">Pop</span>
+            </div>
+            <div class="meta">
+              <span>136 BPM</span>
+              <span class="key-tag">Gmaj</span>
+              <span>$29.99</span>
+            </div>
+            <audio class="audio" id="audio-onceuponatime" src="beats/%22Once Upon A Time%22 136 Gmaj (Pop).wav.mp3"></audio>
+            <button class="glossy-btn" data-audio-id="audio-onceuponatime">Play</button>
           </article>
 
           <!-- HIP-HOP / RAP -->
@@ -735,6 +774,20 @@
             </div>
             <audio class="audio" id="audio-soulja" src="beats/Soulja Boy 82 C%23m (Hiphop:Rap) .mp3"></audio>
             <button class="glossy-btn" data-audio-id="audio-soulja">Play</button>
+          </article>
+
+          <article class="beat-card glass" data-genre="Hip-Hop / Rap">
+            <div class="beat-header">
+              <h3 class="beat-title">Bootstrap</h3>
+              <span class="genre">Rap</span>
+            </div>
+            <div class="meta">
+              <span>132 BPM</span>
+              <span class="key-tag">A#m</span>
+              <span>$29.99</span>
+            </div>
+            <audio class="audio" id="audio-bootstrap" src="beats/%22Bootstrap%22 132 A%23m (Hip-hop:Rap).mp3"></audio>
+            <button class="glossy-btn" data-audio-id="audio-bootstrap">Play</button>
           </article>
 
           <!-- R&B -->
